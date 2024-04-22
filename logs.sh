@@ -1,11 +1,11 @@
 #!/bin/bash
 
 if [ "$#" -ne 1 ]; then
-	echo "Użycie: $0 --logs"
+	echo "Użycie: $0 [--logs | -l]"
 	exit 1
 fi
 
-if [ "$1" != "--logs" ]; then
+if [ "$1" != "--logs" ] && [ "$1" != "-l" ]; then
 	echo "Użycie: $0 --logs"
 	exit 1
 fi
