@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$1" == "--init" ]; then
-	git clone https://github.com/kr0cz4k/lab4 .
+	git clone https://github.com/kr0cz4k/lab4
 
 	current_directory=$(pwd)
 	echo "export PATH=\$PATH:$current_directory" >> ~/.bashrc
