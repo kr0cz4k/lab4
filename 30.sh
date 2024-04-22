@@ -1,12 +1,12 @@
 #!/bin/bash
 
 if [ "$#" -ne 3 ]; then
-	echo "Użycie: $0 --logs [początkowy_numer] [końcowy_numer]"
+	echo "Użycie: $0 [--logs | -l] [początkowy_numer] [końcowy_numer]"
 	exit 1
 fi
 
-if [ "$1" != "--logs" ]; then
-	echo "Użycie: $0 --logs [początkowy_numer] [końcowy_numer]"
+if [ "$1" != "--logs" ] && [ "$1" != "-l" ]; then
+	echo "Użycie: $0 [--logs | -l] [początkowy_numer] [końcowy_numer]"
 	exit 1
 fi
 
