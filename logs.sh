@@ -1,13 +1,13 @@
 #!/bin/bash
 
 if [ "$#" -ne 1 ]; then
-    echo "Użycie: $0 --logs"
-    exit 1
+	echo "Użycie: $0 --logs"
+	exit 1
 fi
 
 if [ "$1" != "--logs" ]; then
-    echo "Użycie: $0 --logs"
-    exit 1
+	echo "Użycie: $0 --logs"
+	exit 1
 fi
 
 for ((i=1; i<=100; i++)); do
